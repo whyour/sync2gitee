@@ -1,9 +1,8 @@
 name: Gitee repos mirror periodic job
 on:
-  push:
   schedule:
     # 每天北京时间0点跑
-    - cron:  '0 16 * * *'
+    - cron:  '0 0 1 * *'
 jobs:
   build:
     runs-on: ubuntu-latest
